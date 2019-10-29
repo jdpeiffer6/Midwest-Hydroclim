@@ -1,0 +1,1 @@
+climdexInput.raw(prec=pdata$percip$inches,prec.dates=as.PCICt(pdata$percip$date,cal="365_day"),base.range=c(2000,2019))
