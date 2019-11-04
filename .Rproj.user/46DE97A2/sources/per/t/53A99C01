@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572895266039.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1652228057",
+    "id" : "53A99C01",
+    "lastKnownWriteTime" : 1572896494,
+    "last_content_update" : 1572896494875,
+    "path" : "~/GitHub/StateParks/Code/getPercipData.R",
+    "project_path" : "Code/getPercipData.R",
+    "properties" : {
+        "cursorPosition" : "7,47",
+        "scrollLine" : "1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
