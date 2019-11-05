@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572922667615.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1318534530",
+    "id" : "527B341E",
+    "lastKnownWriteTime" : 1572924934,
+    "last_content_update" : 1572924934205,
+    "path" : "~/GitHub/StateParks/Code/getAverages.R",
+    "project_path" : "Code/getAverages.R",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

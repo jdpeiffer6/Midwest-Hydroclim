@@ -1,7 +1,6 @@
 for(i in 1:39){
-  if(links[i,3]!='NA'){
   path=createPath(stations,i)
-  a=getParkData(path)}
+  a=getParkData(path)
 }
 
 for(i in 6){
