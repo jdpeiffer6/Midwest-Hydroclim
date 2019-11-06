@@ -5,17 +5,17 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3769263741",
+    "hash" : "2695020138",
     "id" : "A6D34E06",
-    "lastKnownWriteTime" : 1572927875,
-    "last_content_update" : 1572927875914,
+    "lastKnownWriteTime" : 1573001735,
+    "last_content_update" : 1573001735473,
     "path" : "~/GitHub/StateParks/Code/readData.R",
     "project_path" : "Code/readData.R",
     "properties" : {
-        "cursorPosition" : "2,21",
+        "cursorPosition" : "4,34",
         "scrollLine" : "0"
     },
-    "relative_order" : 3,
+    "relative_order" : 2,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "r_source"

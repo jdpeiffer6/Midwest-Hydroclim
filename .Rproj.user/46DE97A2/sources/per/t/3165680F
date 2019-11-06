@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572998418568.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "16049328",
+    "id" : "3165680F",
+    "lastKnownWriteTime" : 1573001109,
+    "last_content_update" : 1573001109471,
+    "path" : "~/GitHub/StateParks/Code/getParkData.R",
+    "project_path" : "Code/getParkData.R",
+    "properties" : {
+        "cursorPosition" : "54,0",
+        "scrollLine" : "33"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
