@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "101117814",
+    "hash" : "3881239447",
     "id" : "527B341E",
-    "lastKnownWriteTime" : 1573003378,
-    "last_content_update" : 1573003378064,
+    "lastKnownWriteTime" : 1573017348,
+    "last_content_update" : 1573017348178,
     "path" : "~/GitHub/StateParks/Code/getAverages.R",
     "project_path" : "Code/getAverages.R",
     "properties" : {
-        "cursorPosition" : "17,31",
+        "cursorPosition" : "12,35",
         "scrollLine" : "0",
         "tempName" : "Untitled1"
     },
