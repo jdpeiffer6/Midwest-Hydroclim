@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1573487623782.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2904910082",
+    "id" : "C3C676B8",
+    "lastKnownWriteTime" : 1573489262,
+    "last_content_update" : 1573489262191,
+    "path" : "~/GitHub/StateParks/Code/locationStringConvert.R",
+    "project_path" : "Code/locationStringConvert.R",
+    "properties" : {
+        "cursorPosition" : "10,1",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
