@@ -2,18 +2,18 @@
     "collab_server" : "",
     "contents" : "",
     "created" : 1582584153362.000,
-    "dirty" : true,
+    "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "4252951289",
     "id" : "9D3AEACC",
-    "lastKnownWriteTime" : 1582583545,
-    "last_content_update" : 1582584993148,
+    "lastKnownWriteTime" : 1582586982,
+    "last_content_update" : 1582586982810,
     "path" : "~/StateParks/Code/HCNdata.R",
     "project_path" : "Code/HCNdata.R",
     "properties" : {
-        "cursorPosition" : "9,0",
-        "scrollLine" : "0"
+        "cursorPosition" : "21,0",
+        "scrollLine" : "6"
     },
     "read_only" : false,
     "read_only_alternatives" : [
