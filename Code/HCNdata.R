@@ -1,4 +1,5 @@
-setwd("C:\\Users\\JD\\Documents\\StateParks\\Data")
+setwd("C:\\Users\\JD\\Documents\\StateParks\\Data\\HCN")
+library(rnoaa)
 
 stations <- ghcnd_stations()
 MOstations=subset(stations,state=='MO')
