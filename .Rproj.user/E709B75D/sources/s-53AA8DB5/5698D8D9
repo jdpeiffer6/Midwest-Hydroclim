@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1582584946045.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5698D8D9",
+    "lastKnownWriteTime" : 7957695011165139568,
+    "last_content_update" : 1582584946045,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "AA252007",
+        "caption" : "uptonow",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=uptonow&cache_key=AA252007",
+        "displayedObservations" : 955,
+        "environment" : "",
+        "expression" : "uptonow",
+        "object" : "uptonow",
+        "preview" : 0,
+        "totalObservations" : 955,
+        "variables" : 11
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

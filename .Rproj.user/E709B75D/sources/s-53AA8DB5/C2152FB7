@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1582584930479.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C2152FB7",
+    "lastKnownWriteTime" : 8026363914660965410,
+    "last_content_update" : 1582584930479,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "55fed6c684ee4588a9cdc343d6bd877d",
+        "name" : "ghcnd_search(uptonow[1, 1])",
+        "title" : "ghcnd_search(uptonow[1, 1])"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}
