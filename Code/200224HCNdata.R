@@ -22,7 +22,7 @@ makeName= function(row,dataList){
 setwd("C:\\Users\\Julia\\Documents\\StateParks\\Data\\HCN\\stationData")
 for (i in 1:dim(uptonow)[1]) {
   
-  stations=ghcnd_search(uptonow[i,1])
+  station=ghcnd_search(uptonow[i,1])
   name=makeName(i,uptonow)
   save(station,file=name)
   
