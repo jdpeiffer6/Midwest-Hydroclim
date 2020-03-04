@@ -1,6 +1,6 @@
 setwd("C:\\Users\\Julia\\Documents\\StateParks\\Data\\HCN")
 load("uptonow.Rdata")
-
+mean(5)
 setwd("C:\\Users\\Julia\\Documents\\StateParks\\Data\\HCN\\stationData")
 library(rnoaa)
 makeName= function(row,dataList){
