@@ -13,3 +13,4 @@ for (i in 1:dim(uptonow)[1]) {
   save(station,file=name)
   print(100*i/dim(uptonow)[1])
 }
+
