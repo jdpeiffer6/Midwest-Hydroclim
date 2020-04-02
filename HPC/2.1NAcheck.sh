@@ -2,7 +2,7 @@
 #--------------------------------------------------------------------------------
 #  SBATCH CONFIG
 #--------------------------------------------------------------------------------
-#SBATCH --job-name=2.1analyzeHCNdata			      # name for the job
+#SBATCH --job-name=2.1NAcheck			      # name for the job
 #SBATCH --cpus-per-task=1             # number of cores
 #SBATCH --mem=8G                      # total memory
 #SBATCH --time 0-03:00                # time limit in the form days-hours:minutes
