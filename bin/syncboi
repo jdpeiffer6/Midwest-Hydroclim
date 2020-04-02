@@ -1,0 +1,6 @@
+#!/bin/bash
+#rsync -ahvP /mnt/c/users/jd/Documents/StateParks/Data jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/data/jdp6n8
+#rsync -ahvP /mnt/c/users/jd/Documents/StateParks/Code jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/data/jdp6n8
+#rsync -ahvP /mnt/c/users/jd/Documents/StateParks/HPC jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/data/jdp6n8
+rsync -ahvP --exclude='Mesonet' --exclude='Documents' --exclude='stationData' --exclude='.git/' /mnt/c/users/jd/Documents/StateParks jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/data/jdp6n8
+echo End syncboi------------------------------------------------------------
