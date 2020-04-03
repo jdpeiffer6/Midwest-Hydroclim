@@ -1,4 +1,0 @@
-#!/bin/bash
-rsync -ahvP jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/data/jdp6n8/StateParks/HPC /mnt/c/users/jd/Desktop/Core
-rsync -ahvP jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/data/jdp6n8/StateParks/Legit /mnt/c/users/jd/Desktop/Core
-echo End syncboi------------------------------------------------------------

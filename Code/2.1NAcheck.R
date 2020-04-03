@@ -1,4 +1,4 @@
-setwd("C:\\Users\\JD\\Documents\\StateParks\\Legit")
+setwd("/home/jd/Documents/StateParks/Data")
 load("allprcp.Rdata")
 #View(allprcp)
 

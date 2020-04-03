@@ -1,4 +1,4 @@
-setwd("/storage/hpc/data/jdp6n8/StateParks/HPC")
+setwd("/home/jd/Documents/StateParks/Data")
 library(rnoaa)
 library(hydroTSM)
 
