@@ -1,4 +1,4 @@
-setwd("/home/jd/Documents/StateParks/Data")
+setwd("C:\\Users\\JD\\Documents\\StateParks\\Data")
 library(rnoaa)
 library(hydroTSM)
 
