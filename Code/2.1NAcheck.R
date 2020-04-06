@@ -1,4 +1,5 @@
 setwd("C:\\Users\\JD\\Documents\\StateParks\\Data")
+library("ggplot2")
 load("allprcp.Rdata")
 #View(allprcp)
 
@@ -16,14 +17,14 @@ for(i in 1:dim(allprcp)[1]){
 }
 save(missingDate,file="missingDate.Rdata")
 
-
+lessThan=500
 load("missingDate.Rdata")
 sumgt=function(x){
-  return(sum(x<100))
+  return(sum(x<lessThan))
 }
 missings=apply(missingDate,1,sumgt)
-
-plot(1:18339,missings,xlab='Days cut since 1970',
-     ylab='Sites with less than 100 missing days',
-     main='Cutoff date vs Missing days'
-)
+missings=data.frame(missings,date=as.Date(names(missings)))
+rownames(missings)=c()
+ggplot(data=missings,aes(x=date,y=missings,group=1))+geom_line(col="blue",size=2)+scale_x_date(date_labels = "%Y")+
+  labs(x="Date of cutoff", y=paste('Sites with less than', lessThan,'missing days'),title="Cutoff date vs Missing Days")+
+  theme(axis.text=element_text(size=12),axis.title=element_text(size=14,face="bold"))
