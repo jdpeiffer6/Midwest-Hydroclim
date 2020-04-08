@@ -1,0 +1,6 @@
+#!/bin/bash
+rsync -ahvP --exclude='Mesonet' --exclude='Documents' --exclude='HCN' --exclude='.git/' --exclude='Old/' jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/data/jdp6n8/StateParks /mnt/c/users/jd/Documents
+cd /mnt/c/users/jd/Documents/StateParks/Code
+find -name "*.R" -exec sed -i 's_/storage/hpc/data/jdp6n8/StateParks/_C:\\\\Users\\\\JD\\\\Documents\\\\StateParks\\\\_g' {} \;
+#find -name "*.R" -exec sed -i 's_/storage/hpc/data/jdp6n8/StateParks/_/home/jd/Documents/StateParks/_g' {} \;
+echo End syncboi------------------------------------------------------------

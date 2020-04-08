@@ -1,0 +1,3 @@
+#!/bin/bash
+cp -r /mnt/c/users/jd/Documents/StateParks/* /mnt/m
+echo End syncboi------------------------------------------------------------
