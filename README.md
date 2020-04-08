@@ -1,16 +1,17 @@
 # Midwest-Hydroclim
-## Code
-Note that most R scripts have corresponding .sh files for use in HPC.
-  ### Old
-    -Nothing new here
-  -1getHCNdata.R
-    -Gets missouri Historical Climate Network (HCN) data using rnoaa package and creates data frame.
-  -2.1NAcheck.R
-    -Analyzes missing data in data frame created in 1getHCNdata.R
-  -3indicies.R
-     -Applies climdex indicies to Missouri HCN data.
-## Data
-  ### HCN
-  ### Mesonet
-## Documents
-  Haven't used in awhile...
+.
+├── Code
+│   ├── 1getHCNdata.R
+│   ├── 2.1NAcheck.R
+│   ├── 3indicies.R
+│   └── Old
+├── Data
+│   ├── MOstations.Rdata
+│   ├── allprcp.Rdata
+│   ├── cwd.Rdata
+│   ├── missingDate.Rdata
+│   └── uptonow.Rdata
+├── Documents
+│   ├── Journal.docx
+│   ├── Links.xlsx
+│   └── avgData.xlsx
