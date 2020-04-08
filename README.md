@@ -13,6 +13,10 @@ Note that most ".R" files have corresponding ".sh" files to be run on HPC.
 - **uptonow** MOstations subsetted to data that goes to current date.
 ## Documents
 - Not currently in use
+## bin
+- **tohpc** shell script that syncs repository to HPC and changes R setwd() paths to HPC paths.
+- **fromhpc** brings data back from HPC and changes R paths back to local machine
+- **toshare** copies repository to network drive
 <pre>
 .
 ├── Code
@@ -42,7 +46,11 @@ Note that most ".R" files have corresponding ".sh" files to be run on HPC.
 │   ├── Journal.docx
 │   ├── Links.xlsx
 │   └── avgData.xlsx
+├── bin
+│   ├── fromhpc
+│   ├── tohpc
+│   └── toshare
 └── tree.txt
 
-4 directories, 24 files
+5 directories, 27 files
 </pre>
