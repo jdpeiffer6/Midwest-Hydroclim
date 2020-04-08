@@ -1,7 +1,7 @@
 #!/bin/bash
-cd /mnt/c/users/jd/Documents/StateParks/Code
-find -name "*.R" -exec sed -i 's_C:\\\\Users\\\\JD\\\\Documents\\\\StateParks\\\\_/storage/hpc/data/jdp6n8/StateParks/_g' {} \;
-find -name "*.R" -exec sed -i 's_/home/jd/Documents/StateParks/_/storage/hpc/data/jdp6n8/StateParks/_g' {} \;
-rsync -ahvP --exclude='Mesonet' --exclude='Documents' --exclude='HCN' --exclude='.git/' --exclude='Old/' /mnt/c/users/jd/Documents/StateParks jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/data/jdp6n8
+cd /mnt/c/users/jd/Documents/MWHC/Code
+find -name "*.R" -exec sed -i 's_C:\\\\Users\\\\JD\\\\Documents\\\\MWHC\\\\_/storage/hpc/data/jdp6n8/MWHC/_g' {} \;
+find -name "*.R" -exec sed -i 's_/home/jd/Documents/MWHC/_/storage/hpc/data/jdp6n8/MWHC/_g' {} \;
+rsync -ahvP --exclude='Documents' --exclude='bin/' --exclude='README.md' --exclude='tree.txt' --exclude='.git/' --exclude='Old/' /mnt/c/users/jd/Documents/MWHC jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/data/jdp6n8
 ssh jdp6n8@lewis.rnet.missouri.edu
 echo End syncboi------------------------------------------------------------
