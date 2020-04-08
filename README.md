@@ -1,7 +1,18 @@
 # Midwest-Hydroclim
 ## Code
 Note that most ".R" files have corresponding ".sh" files to be run on HPC.
-- 1getHCNdata.R: Uses rnoaa package to generate daily percipitation data for missouri from 1970-2019. Saves output as "Data/allprcp.Rdata"
+- **1getHCNdata.R** uses rnoaa package to generate daily percipitation data for missouri from 1970-2019. Saves output as "Data/allprcp.Rdata"
+- **2.1NAcheck.R** loads output of 1 and analyzes the timing and extent of missing dates in the dataset/
+- **3indicies.R** computes climdex indicies, currently only consecutive wet days (CWD).
+- **Old** code that is not used anymore
+## Data
+- **MOstations** raw HCN output subsetted to Missouri precipation stations.
+- **allprcp** time series data 1970-2019 of all Missouri precipation stations.
+- **cwd** climdex.cwd data for allprcp. Much of the dataset has too many missing values.
+- **missingdate** output of script 2 showing how many days each station misses as cutoff date progresses from 1970->2019.
+- **uptonow** MOstations subsetted to data that goes to current date.
+## Documents
+- Not currently in use
 <pre>
 .
 ├── Code
