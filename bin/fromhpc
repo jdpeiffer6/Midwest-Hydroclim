@@ -1,6 +1,29 @@
 #!/bin/bash
-rsync -ahvP --exclude='slurm' --exclude='Mesonet' --exclude='Documents' --exclude='HCN' --exclude='.git/' --exclude='Old/' jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/data/jdp6n8/MWHC /mnt/c/users/jd/Documents
+sflag=false
+while test $# -gt 0; do
+           case "$1" in
+                -s)
+                    sflag=true
+					echo sflag updated!
+					shift
+                    ;;
+                *)
+                   echo "$1 is not a recognized flag!"
+				   shift
+                   ;;
+          esac
+  done  
 cd /mnt/c/users/jd/Documents/MWHC/Code
+  if [ "$sflag" = true ];
+then
+	echo syncing from share
+	rsync -ahvP --exclude='slurm' --exclude='Mesonet' --exclude='Documents' --exclude='HCN' --exclude='.git/' --exclude='Old/' jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/group/aloysius-hydro01/MWHC /mnt/c/users/jd/Documents
+else
+    echo syncing from jdp
+    rsync -ahvP --exclude='slurm' --exclude='Mesonet' --exclude='Documents' --exclude='HCN' --exclude='.git/' --exclude='Old/' jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/data/jdp6n8/MWHC /mnt/c/users/jd/Documents
+fi
+find -name "*.R" -exec sed -i 's_/storage/hpc/group/aloysius-hydro01/MWHC/_C:\\\\Users\\\\JD\\\\Documents\\\\MWHC\\\\_g' {} \;
 find -name "*.R" -exec sed -i 's_/storage/hpc/data/jdp6n8/MWHC/_C:\\\\Users\\\\JD\\\\Documents\\\\MWHC\\\\_g' {} \;
+#find -name "*.R" -exec sed -i 's_/storage/hpc/data/jdp6n8/MWHC/_C:\\\\Users\\\\JD\\\\Documents\\\\MWHC\\\\_g' {} \;
 #find -name "*.R" -exec sed -i 's_/storage/hpc/data/jdp6n8/MWHC/_/home/jd/Documents/MWHC/_g' {} \;
 echo End syncboi------------------------------------------------------------

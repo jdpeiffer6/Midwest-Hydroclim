@@ -1,4 +1,4 @@
-setwd("C:\\Users\\JD\\Documents\\StateParks\\Data")
+setwd("C:\\Users\\JD\\Documents\\MWHC\\Data")
 library(climdex.pcic)
 library(ggplot2)
 library(hydroTSM)

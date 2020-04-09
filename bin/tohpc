@@ -1,7 +1,42 @@
 #!/bin/bash
+nflag=false
+sflag=false
+ while test $# -gt 0; do
+           case "$1" in
+                -n)
+                    nflag=true
+					echo nflag updated!
+					shift
+                    ;;
+                -s)
+                    sflag=true
+					echo sflag updated!
+					shift
+                    ;;
+                *)
+                   echo "$1 is not a recognized flag!"
+				   shift
+                   ;;
+          esac
+  done  
 cd /mnt/c/users/jd/Documents/MWHC/Code
-find -name "*.R" -exec sed -i 's_C:\\\\Users\\\\JD\\\\Documents\\\\MWHC\\\\_/storage/hpc/data/jdp6n8/MWHC/_g' {} \;
-find -name "*.R" -exec sed -i 's_/home/jd/Documents/MWHC/_/storage/hpc/data/jdp6n8/MWHC/_g' {} \;
-rsync -ahvP --exclude='Documents' --exclude='bin/' --exclude='README.md' --exclude='tree.txt' --exclude='.git/' --exclude='Old/' /mnt/c/users/jd/Documents/MWHC jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/data/jdp6n8
-ssh jdp6n8@lewis.rnet.missouri.edu
+#find -name "*.R" -exec sed -i 's_C:\\\\Users\\\\JD\\\\Documents\\\\MWHC\\\\_/storage/hpc/data/jdp6n8/MWHC/_g' {} \;
+#find -name "*.R" -exec sed -i 's_/home/jd/Documents/MWHC/_/storage/hpc/data/jdp6n8/MWHC/_g' {} \;
+if [ "$sflag" = true ];
+then
+	echo syncing to share
+    find -name "*.R" -exec sed -i 's_C:\\\\Users\\\\JD\\\\Documents\\\\MWHC\\\\_/storage/hpc/group/aloysius-hydro01/MWHC/_g' {} \;
+    find -name "*.R" -exec sed -i 's_/home/jd/Documents/MWHC/_/storage/hpc/group/aloysius-hydro01/MWHC/_g' {} \;
+	rsync -ahvP --exclude='Documents' --exclude='bin/' --exclude='README.md' --exclude='tree.txt' --exclude='.git/' --exclude='Old/' /mnt/c/users/jd/Documents/MWHC jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/group/aloysius-hydro01
+else
+	echo syncing to jdp
+    find -name "*.R" -exec sed -i 's_C:\\\\Users\\\\JD\\\\Documents\\\\MWHC\\\\_/storage/hpc/data/jdp6n8/MWHC/_g' {} \;
+    find -name "*.R" -exec sed -i 's_/home/jd/Documents/MWHC/_/storage/hpc/data/jdp6n8/MWHC/_g' {} \;
+	rsync -ahvP --exclude='Documents' --exclude='bin/' --exclude='README.md' --exclude='tree.txt' --exclude='.git/' --exclude='Old/' /mnt/c/users/jd/Documents/MWHC jdp6n8@lewis.rnet.missouri.edu:/storage/hpc/data/jdp6n8
+fi
+if [ "$nflag" != true ];
+then
+	echo logging in
+	ssh jdp6n8@lewis.rnet.missouri.edu
+fi
 echo End syncboi------------------------------------------------------------
