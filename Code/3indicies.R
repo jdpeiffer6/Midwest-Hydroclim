@@ -1,4 +1,4 @@
-setwd("C:\\Users\\JD\\Documents\\MWHC\\Data")
+setwd("/storage/hpc/data/jdp6n8/MWHC/Data")
 library(climdex.pcic)
 library(ggplot2)
 library(hydroTSM)
