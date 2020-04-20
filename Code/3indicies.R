@@ -19,8 +19,12 @@ cwd=apply(allprcp[,6:dim(allprcp)[2]],2,FUN=comp.cwd)
 save(cwd,file="cwd.Rdata")
 
 nas=apply(cwd,2,addNA)
-sum(nas<=10)
-cwdL=cwd[,nas<=10]
+sum(nas<=2)
+cwdL=cwd[,nas<=2]
+long=colnames(cwdL)
+lprcp=allprcp[,long]
+save(lprcp,file="lprcp.Rdata")
+
 cwdL=apply(cwdL,1,sum,na.rm=T)
 d=data.frame(yr=yip("1970-01-01","2019-01-01"),wet.days=cwdL[1:50])
 ggplot(data=d,aes(x=yr,y=wet.days,group=1))+geom_point(col="blue",size=2)+scale_x_date(date_labels = "%Y")+
