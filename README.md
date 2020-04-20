@@ -11,6 +11,7 @@ Note that most ".R" files have corresponding ".sh" files to be run on HPC.
 - **cwd** climdex.cwd data for allprcp. Much of the dataset has too many missing values.
 - **missingdate** output of script 2 showing how many days each station misses as cutoff date progresses from 1970->2019.
 - **uptonow** MOstations subsetted to data that goes to current date.
+- **lprcp** subset of allprcp of the 8 stations with the most data. Created in 3indicies.
 ## Documents
 - Not currently in use
 ## bin
