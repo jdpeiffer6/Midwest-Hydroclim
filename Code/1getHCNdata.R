@@ -4,7 +4,7 @@
 #unless you are using the HPC! The matrix that is created is saved in 
 #Data/allprcp.Rdata for you to use!
 
-setwd("/storage/hpc/data/jdp6n8/MWHC/Data")    #maybe change your path
+setwd("C:\\Users\\JD\\Documents\\MWHC\\Data")    #maybe change your path
 library(rnoaa)         #if this fails, try install.packages("rnoaa","hydroTSM") first
 library(hydroTSM)
 
