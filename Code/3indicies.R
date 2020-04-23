@@ -28,5 +28,5 @@ save(lprcp,file="lprcp.Rdata")
 cwdL=apply(cwdL,1,sum,na.rm=T)
 d=data.frame(yr=yip("1970-01-01","2019-01-01"),wet.days=cwdL[1:50])
 ggplot(data=d,aes(x=yr,y=wet.days,group=1))+geom_point(col="blue",size=2)+scale_x_date(date_labels = "%Y")+
-  labs(x="Year", y="Total Consecutive Wet Days\nacross 33 Missouri Stations",title="Consecutive Wet Days vs Time")+
+  labs(x="Year", y="Total Consecutive Wet Days\nacross 8 Missouri Stations",title="Consecutive Wet Days vs Time")+
   theme(axis.text=element_text(size=12),axis.title=element_text(size=14,face="bold"))
