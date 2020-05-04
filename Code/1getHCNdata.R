@@ -4,17 +4,23 @@
 #unless you are using the HPC! The matrix that is created is saved in 
 #Data/allprcp.Rdata for you to use!
 
-setwd("C:\\Users\\JD\\Documents\\MWHC\\Data")    #maybe change your path
+setwd("C:\\Users\\JD\\Documents\\R-Tutorial\\Data")    #maybe change your path
 library(rnoaa)         #if this fails, try install.packages("rnoaa","hydroTSM") first
 library(hydroTSM)
 
 stations <- ghcnd_stations()  #generates a list of all avaliable HCN Stations
 MOstations = subset(stations, state == 'MO')     #We only want missouri ones
-uptonow = subset(MOstations, last_year >= 2019 & (element == 'PRCP')) #missouri stations that go up to 2019 and are percipitation
+
+names=c("USC00233038","USC00235027","USC00235307","USW00003945","USW00013987","USW00013994","USW00013995")
+
+ourData = subset(MOstations, MOstations$id==names[1] |MOstations$id==names[2] |MOstations$id==names[3] |MOstations$id==names[4] |MOstations$id==names[5] |MOstations$id==names[6] |MOstations$id==names[7]) #missouri stations that go up to 2019 and are percipitation
+prcp=subset(ourData,element=="PRCP")
+tmax=subset(ourData,element=="TMAX")
+tmin=subset(ourData,element=="TMIN")
 
 # make empty frame --------------------------------------------------------
 start.date <- as.Date("1970-01-01")
-end.date <- as.Date("2020-03-17")
+end.date <- as.Date("2019-12-31")
 date1 <- data.frame(date = dip(start.date, end.date))
 date1$year <- as.numeric(format(date1$date, "%Y"))
 date1$month <- as.numeric(format(date1$date, "%m"))
