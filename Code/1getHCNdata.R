@@ -4,7 +4,7 @@
 #unless you are using the HPC! The matrix that is created is saved in 
 #Data/allprcp.Rdata for you to use!
 
-setwd("C:\\Users\\JD\\Documents\\R-Tutorial\\Data")    #maybe change your path
+setwd("/home/jd/Documents/MWHC/Data")    #maybe change your path
 library(rnoaa)         #if this fails, try install.packages("rnoaa","hydroTSM") first
 library(hydroTSM)
 
@@ -35,9 +35,9 @@ allprcp = data.frame(
 )
 rownames(allprcp) = date1$date
 
-# loop --------------------------------------------------------------------
-for (j in 1:dim(uptonow)[1]) {         #loops through all HCN stations we want
-  station = ghcnd_search(uptonow[j, 1])    #gets HCN data
+# prcp loop --------------------------------------------------------------------
+for (j in 1:dim(prcp)[1]) {         #loops through all HCN stations we want
+  station = ghcnd_search(prcp[j, 1])    #gets HCN data
   dates = station$prcp$date
   rain = station$prcp$prcp
   for (i in 1:length(dates)) {    #loops through every entry
@@ -49,3 +49,20 @@ for (j in 1:dim(uptonow)[1]) {         #loops through all HCN stations we want
   }
 }
 save(allprcp, file = "allprcp.Rdata") #saves our matrix
+
+
+# t max loop --------------------------------------------------------------
+for (j in 1:dim(tmax)[1]) {         #loops through all HCN stations we want
+  station = ghcnd_search(tmax[j, 1])    #gets HCN data
+  dates = station$prcp$date
+  rain = station$prcp$prcp
+  for (i in 1:length(dates)) {    #loops through every entry
+    if (as.numeric(substr(dates[i], 1, 4)) >= 1970) {     #if entry is in our date range
+      allprcp[toString(dates[i]), station$prcp$id[1]] = rain[i]   #put it in the matrix
+      print("match")
+    }
+    print(i)    #to moniter progress of loop
+  }
+}
+save(allprcp, file = "allprcp.Rdata") #saves our matrix
+

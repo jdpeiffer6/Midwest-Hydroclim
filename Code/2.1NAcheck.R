@@ -1,7 +1,7 @@
 #I want to be able to visualize how many missing dates are in our dataset
 #depending on when we choose our start date! This script does that.
 
-setwd("C:\\Users\\JD\\Documents\\MWHC\\Data")
+setwd("/home/jd/Documents/MWHC/Data")
 library("ggplot2")     #library for plotting
 load("allprcp.Rdata")   #loads our dataset
 #View(allprcp)
